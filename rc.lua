@@ -531,6 +531,7 @@ globalkeys = awful.util.table.join(
 
     -- User programs
     awful.key({ modkey }, "q", function () awful.util.spawn("terminator") end),
+    awful.key({ modkey }, "t", function () awful.util.spawn("thunar") end),
     awful.key({ modkey }, "i", function () awful.util.spawn(browser2) end),
     awful.key({ modkey }, "s", function () awful.util.spawn(gui_editor) end),
     awful.key({ modkey }, "g", function () awful.util.spawn(graphics) end),
@@ -714,7 +715,6 @@ client.connect_signal("focus",
     end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
-
 -- {{{ Arrange signal handler
 for s = 1, screen.count() do screen[s]:connect_signal("arrange", function ()
         local clients = awful.client.visible(s)

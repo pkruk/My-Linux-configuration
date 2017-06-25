@@ -1,0 +1,6 @@
+Plugins:
+https://github.com/robbyrussell/oh-my-zsh
+
+Theme: robbyrussel
+Font: Hack http://sourcefoundry.org/hack/
+
